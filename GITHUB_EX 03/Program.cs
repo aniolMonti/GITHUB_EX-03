@@ -4,34 +4,35 @@
     //---------MENU---------
     private static void Main(string[] args)
     {
-        ConsoleKeyInfo tecla;
+        Console.Out.NewLine = "\r\n\r\n";
+        ConsoleKeyInfo key;
         do
         {
             Console.Clear();
             ShowOptions();
-            tecla = Console.ReadKey();
+            key = Console.ReadKey();
             Console.Clear();
 
-            switch (tecla.Key)
+            switch (key.Key)
             {
                 case ConsoleKey.D1:
                     DoEntertainment();
                     break;
-                case ConsoleKey.D2:
-                    DoScience();
-                    break;
-                case ConsoleKey.D3:
-                    DoHistory();
-                    break;
-                case ConsoleKey.D4:
-                    DoGeography();
-                    break;
-                case ConsoleKey.D5:
-                    DoArt();
-                    break;
-                case ConsoleKey.D6:
-                    DoSport();
-                    break;
+                //case ConsoleKey.D2:
+                //    DoScience();
+                //    break;
+                //case ConsoleKey.D3:
+                //    DoHistory();
+                //    break;
+                //case ConsoleKey.D4:
+                //    DoGeography();
+                //    break;
+                //case ConsoleKey.D5:
+                //    DoArt();
+                //    break;
+                //case ConsoleKey.D6:
+                //    DoSport();
+                //    break;
                 case ConsoleKey.D0:
                     MsgNextScreen("PRESS ANY KEY TO EXIT");
                     break;
@@ -40,7 +41,7 @@
                     break;
             }
 
-        } while (tecla.Key != ConsoleKey.D0);
+        } while (key.Key != ConsoleKey.D0);
     }
     //----------------------------------SHOW OPTIONS----------------------------------
     public static void ShowOptions()
@@ -61,6 +62,141 @@
         Console.ReadKey();
     }
     //aniol
+
+    //----------------------------ENTERTAINMENT----------------------------
+    public static void DoEntertainment()
+    {
+        int points = 0;
+        int correct = 0;
+        int key;
+
+        try
+        {
+            Console.WriteLine("QUESTION 1");
+            Console.WriteLine("What is the name of the protagonist of the Indiana Jones saga?");
+            Console.WriteLine("1. Chris Pratt");
+            Console.WriteLine("2. Michael Fox");
+            Console.WriteLine("3. Harrison Ford");
+            Console.WriteLine("4. Robin Williams");
+
+            Console.Write("YOUR ANSWER: ");
+            key = Convert.ToInt32(Console.ReadLine());
+            correct = 3;
+
+            if (key == correct)
+            {
+                Console.WriteLine($"{key} IS CORRECT");
+                points++;
+            }
+            else Console.WriteLine($"{key} IS INCORRECT");
+
+            Console.WriteLine("PRESS ANY KEY TO CONTINUE");
+            Console.ReadKey();
+            Console.Clear();
+
+
+            Console.WriteLine("QUESTION 2");
+            Console.WriteLine("What animal is Jasmine's pet in Aladdin?");
+            Console.WriteLine("1. Elephant");
+            Console.WriteLine("2. Tiger");
+            Console.WriteLine("3. Monkey");
+            Console.WriteLine("4. Snake");
+
+            Console.Write("YOUR ANSWER: ");
+            key = Convert.ToInt32(Console.ReadLine());
+            correct = 2;
+
+            if (key == correct)
+            {
+                Console.WriteLine($"{key} IS CORRECT");
+                points++;
+            }
+            else Console.WriteLine($"{key} IS INCORRECT");
+
+            Console.WriteLine("PRESS ANY KEY TO CONTINUE");
+            Console.ReadKey();
+            Console.Clear();
+
+
+            Console.WriteLine("QUESTION 3");
+            Console.WriteLine("Who is considered the King of Pop?");
+            Console.WriteLine("1. Justin Bieber");
+            Console.WriteLine("2. Michael Jackson");
+            Console.WriteLine("3. Zyan Malik");
+            Console.WriteLine("4. Elvis Presley");
+
+            Console.Write("YOUR ANSWER: ");
+            key = Convert.ToInt32(Console.ReadLine());
+            correct = 2;
+
+            if (key == correct)
+            {
+                Console.WriteLine($"{key} IS CORRECT");
+                points++;
+            }
+            else Console.WriteLine($"{key} IS INCORRECT");
+
+            Console.WriteLine("PRESS ANY KEY TO CONTINUE");
+            Console.ReadKey();
+            Console.Clear();
+
+
+            Console.WriteLine("QUESTION 4");
+            Console.WriteLine("Which Mortal Kombat video game character has ice powers?");
+            Console.WriteLine("1. Sub-Zero");
+            Console.WriteLine("2. Scorpion");
+            Console.WriteLine("3. Reptile");
+            Console.WriteLine("4. Motaro");
+
+            Console.Write("YOUR ANSWER: ");
+            key = Convert.ToInt32(Console.ReadLine());
+            correct = 1;
+
+            if (key == correct)
+            {
+                Console.WriteLine($"{key} IS CORRECT");
+                points++;
+            }
+            else Console.WriteLine($"{key} IS INCORRECT");
+
+            Console.WriteLine("PRESS ANY KEY TO CONTINUE");
+            Console.ReadKey();
+            Console.Clear();
+
+
+            Console.WriteLine("QUESTION 5");
+            Console.WriteLine("Which day is Valentine's Day?");
+            Console.WriteLine("1. March 14th");
+            Console.WriteLine("2. February 15th");
+            Console.WriteLine("3. February 14th");
+            Console.WriteLine("4. March 15th");
+
+            Console.Write("YOUR ANSWER: ");
+            key = Convert.ToInt32(Console.ReadLine());
+            correct = 3;
+
+            if (key == correct)
+            {
+                Console.WriteLine($"{key} IS CORRECT");
+                points++;
+            }
+            else Console.WriteLine($"{key} IS INCORRECT");
+
+            Console.WriteLine("PRESS ANY KEY TO CONTINUE");
+            Console.ReadKey();
+            Console.Clear();
+
+            Console.WriteLine($"YOU HAVE {points} POINTS");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message); 
+        }
+        finally
+        {
+            MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        }
+    }
 
     //aniol
 
