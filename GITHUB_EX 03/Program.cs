@@ -21,9 +21,9 @@
                 case ConsoleKey.D2:
                     DoScience();
                     break;
-                //case ConsoleKey.D3:
-                //    DoHistory();
-                //    break;
+                case ConsoleKey.D3:
+                    DoHistory();
+                    break;
                 //case ConsoleKey.D4:
                 //    DoGeography();
                 //    break;
@@ -308,6 +308,140 @@
             Console.Write("YOUR ANSWER: ");
             key = Convert.ToInt32(Console.ReadLine());
             correct = 2;
+
+            if (key == correct)
+            {
+                Console.WriteLine($"{key} IS CORRECT");
+                points++;
+            }
+            else Console.WriteLine($"{key} IS INCORRECT");
+
+            Console.WriteLine("PRESS ANY KEY TO CONTINUE");
+            Console.ReadKey();
+            Console.Clear();
+
+            Console.WriteLine($"YOU HAVE {points} POINTS");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+        }
+        finally
+        {
+            MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        }
+    }
+    //----------------------------HISTORY----------------------------
+    public static void DoHistory()
+    {
+        int points = 0;
+        int correct = 0;
+        int key;
+
+        try
+        {
+            Console.WriteLine("QUESTION 1");
+            Console.WriteLine("What is celebrated on March 8?");
+            Console.WriteLine("1. Labor day");
+            Console.WriteLine("2. Environment day");
+            Console.WriteLine("3. Women's day");
+            Console.WriteLine("4. Children's day");
+
+            Console.Write("YOUR ANSWER: ");
+            key = Convert.ToInt32(Console.ReadLine());
+            correct = 3;
+
+            if (key == correct)
+            {
+                Console.WriteLine($"{key} IS CORRECT");
+                points++;
+            }
+            else Console.WriteLine($"{key} IS INCORRECT");
+
+            Console.WriteLine("PRESS ANY KEY TO CONTINUE");
+            Console.ReadKey();
+            Console.Clear();
+
+
+            Console.WriteLine("QUESTION 2");
+            Console.WriteLine("What did Jehovah's Witnesses call God?");
+            Console.WriteLine("1. Mutant");
+            Console.WriteLine("2. Jehovah");
+            Console.WriteLine("3. Buddha");
+            Console.WriteLine("4. Jesus");
+
+            Console.Write("YOUR ANSWER: ");
+            key = Convert.ToInt32(Console.ReadLine());
+            correct = 2;
+
+            if (key == correct)
+            {
+                Console.WriteLine($"{key} IS CORRECT");
+                points++;
+            }
+            else Console.WriteLine($"{key} IS INCORRECT");
+
+            Console.WriteLine("PRESS ANY KEY TO CONTINUE");
+            Console.ReadKey();
+            Console.Clear();
+
+
+            Console.WriteLine("QUESTION 3");
+            Console.WriteLine("In which country was Protestantism born?");
+            Console.WriteLine("1. Germany");
+            Console.WriteLine("2. Italy");
+            Console.WriteLine("3. France");
+            Console.WriteLine("4. Poland");
+
+            Console.Write("YOUR ANSWER: ");
+            key = Convert.ToInt32(Console.ReadLine());
+            correct = 1;
+
+            if (key == correct)
+            {
+                Console.WriteLine($"{key} IS CORRECT");
+                points++;
+            }
+            else Console.WriteLine($"{key} IS INCORRECT");
+
+            Console.WriteLine("PRESS ANY KEY TO CONTINUE");
+            Console.ReadKey();
+            Console.Clear();
+
+
+            Console.WriteLine("QUESTION 4");
+            Console.WriteLine("What empire came to conquer almost all of Europe?");
+            Console.WriteLine("1. Carthage");
+            Console.WriteLine("2. Roman");
+            Console.WriteLine("3. Spartan");
+            Console.WriteLine("4. Viking");
+
+            Console.Write("YOUR ANSWER: ");
+            key = Convert.ToInt32(Console.ReadLine());
+            correct = 2;
+
+            if (key == correct)
+            {
+                Console.WriteLine($"{key} IS CORRECT");
+                points++;
+            }
+            else Console.WriteLine($"{key} IS INCORRECT");
+
+            Console.WriteLine("PRESS ANY KEY TO CONTINUE");
+            Console.ReadKey();
+            Console.Clear();
+
+
+            Console.WriteLine("QUESTION 5");
+            Console.WriteLine("How many colors does the Spanish flag have?");
+            Console.WriteLine("1. Three");
+            Console.WriteLine("2. Four");
+            Console.WriteLine("3. Two");
+            Console.WriteLine("4. One");
+
+            Console.Write("YOUR ANSWER: ");
+            key = Convert.ToInt32(Console.ReadLine());
+            correct = 3;
 
             if (key == correct)
             {
