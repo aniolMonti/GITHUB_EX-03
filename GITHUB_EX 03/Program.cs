@@ -18,9 +18,9 @@
                 case ConsoleKey.D1:
                     DoEntertainment();
                     break;
-                //case ConsoleKey.D2:
-                //    DoScience();
-                //    break;
+                case ConsoleKey.D2:
+                    DoScience();
+                    break;
                 //case ConsoleKey.D3:
                 //    DoHistory();
                 //    break;
@@ -191,6 +191,140 @@
         catch (Exception e)
         {
             Console.WriteLine(e.Message); 
+        }
+        finally
+        {
+            MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        }
+    }
+    //----------------------------SCIENCE----------------------------
+    public static void DoScience()
+    {
+        int points = 0;
+        int correct = 0;
+        int key;
+
+        try
+        {
+            Console.WriteLine("QUESTION 1");
+            Console.WriteLine("Where does saccharin come from?");
+            Console.WriteLine("1. Sunflower oil");
+            Console.WriteLine("2. Of sugar");
+            Console.WriteLine("3. Of sulfur");
+            Console.WriteLine("4. Of coal");
+
+            Console.Write("YOUR ANSWER: ");
+            key = Convert.ToInt32(Console.ReadLine());
+            correct = 4;
+
+            if (key == correct)
+            {
+                Console.WriteLine($"{key} IS CORRECT");
+                points++;
+            }
+            else Console.WriteLine($"{key} IS INCORRECT");
+
+            Console.WriteLine("PRESS ANY KEY TO CONTINUE");
+            Console.ReadKey();
+            Console.Clear();
+
+
+            Console.WriteLine("QUESTION 2");
+            Console.WriteLine("How many faces does an icosahedron have?");
+            Console.WriteLine("1. 20");
+            Console.WriteLine("2. 16");
+            Console.WriteLine("3. 8");
+            Console.WriteLine("4. 24");
+
+            Console.Write("YOUR ANSWER: ");
+            key = Convert.ToInt32(Console.ReadLine());
+            correct = 1;
+
+            if (key == correct)
+            {
+                Console.WriteLine($"{key} IS CORRECT");
+                points++;
+            }
+            else Console.WriteLine($"{key} IS INCORRECT");
+
+            Console.WriteLine("PRESS ANY KEY TO CONTINUE");
+            Console.ReadKey();
+            Console.Clear();
+
+
+            Console.WriteLine("QUESTION 3");
+            Console.WriteLine("What is the chemical formula of water?");
+            Console.WriteLine("1. HO");
+            Console.WriteLine("2. H02");
+            Console.WriteLine("3. H20");
+            Console.WriteLine("4. Wtr");
+
+            Console.Write("YOUR ANSWER: ");
+            key = Convert.ToInt32(Console.ReadLine());
+            correct = 3;
+
+            if (key == correct)
+            {
+                Console.WriteLine($"{key} IS CORRECT");
+                points++;
+            }
+            else Console.WriteLine($"{key} IS INCORRECT");
+
+            Console.WriteLine("PRESS ANY KEY TO CONTINUE");
+            Console.ReadKey();
+            Console.Clear();
+
+
+            Console.WriteLine("QUESTION 4");
+            Console.WriteLine("What is hemophobia?");
+            Console.WriteLine("1. Fear of heights");
+            Console.WriteLine("2. Fear of blood");
+            Console.WriteLine("3. Afraid of water");
+            Console.WriteLine("4. None is correct");
+
+            Console.Write("YOUR ANSWER: ");
+            key = Convert.ToInt32(Console.ReadLine());
+            correct = 2;
+
+            if (key == correct)
+            {
+                Console.WriteLine($"{key} IS CORRECT");
+                points++;
+            }
+            else Console.WriteLine($"{key} IS INCORRECT");
+
+            Console.WriteLine("PRESS ANY KEY TO CONTINUE");
+            Console.ReadKey();
+            Console.Clear();
+
+
+            Console.WriteLine("QUESTION 5");
+            Console.WriteLine("What liquid do cacti store?");
+            Console.WriteLine("1. Sap");
+            Console.WriteLine("2. Water");
+            Console.WriteLine("3. Wine");
+            Console.WriteLine("4. Nectar");
+
+            Console.Write("YOUR ANSWER: ");
+            key = Convert.ToInt32(Console.ReadLine());
+            correct = 2;
+
+            if (key == correct)
+            {
+                Console.WriteLine($"{key} IS CORRECT");
+                points++;
+            }
+            else Console.WriteLine($"{key} IS INCORRECT");
+
+            Console.WriteLine("PRESS ANY KEY TO CONTINUE");
+            Console.ReadKey();
+            Console.Clear();
+
+            Console.WriteLine($"YOU HAVE {points} POINTS");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
         }
         finally
         {
