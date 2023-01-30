@@ -385,6 +385,160 @@
         }
     }
 
+    public static void DoSport()
+    {
+        int points = 0, correct, key;
+        try
+        {
+
+
+            Console.WriteLine("QUESTION 1");
+            Console.WriteLine("What is the most watched sport in the world?");
+            Console.WriteLine("1. Soccer");
+            Console.WriteLine("2. Basketball");
+            Console.WriteLine("3. American Football");
+            Console.WriteLine("4. Cricket");
+
+            Console.Write("YOUR ANSWER: ");
+            key = Convert.ToInt32(Console.ReadLine());
+            correct = 1;
+
+            if (key == correct)
+            {
+                points++;
+                Console.WriteLine("{0} IS CORRECT", key);
+            }
+            else { Console.WriteLine("{0} IS INCORRECT", key); }
+
+            Console.WriteLine("PRESS ANY KEY TO CONTINUE");
+            Console.ReadKey();
+            Console.Clear();
+
+
+
+
+
+            Console.WriteLine("QUESTION 2");
+            Console.WriteLine("Which country has won the most World Cups in soccer?");
+            Console.WriteLine("1. Brazil");
+            Console.WriteLine("2. Germany");
+            Console.WriteLine("3. Italy");
+            Console.WriteLine("4. Argentina");
+
+            Console.Write("YOUR ANSWER: ");
+            key = Convert.ToInt32(Console.ReadLine());
+            correct = 1;
+
+
+            if (key == correct)
+            {
+                points++;
+                Console.WriteLine("{0} IS CORRECT", key);
+            }
+            else { Console.WriteLine("{0} IS INCORRECT", key); }
+
+
+            Console.WriteLine("PRES ANY KEY TO CONTINUE");
+            Console.ReadKey();
+            Console.Clear();
+
+
+
+
+            Console.WriteLine("QUESTION 3");
+            Console.WriteLine("Who is the fastest man in the world?");
+            Console.WriteLine("1. Usain Bolt");
+            Console.WriteLine("2. Justin Gatlin");
+            Console.WriteLine("3. Tyson Gay");
+            Console.WriteLine("4. Asafa Powell");
+
+            Console.Write("YOUR ANSWER: ");
+            key = Convert.ToInt32(Console.ReadLine());
+            correct = 1;
+
+
+            if (key == correct)
+            {
+                points++;
+                Console.WriteLine("{0} IS CORRECT", key);
+            }
+            else { Console.WriteLine("{0} IS INCORRECT", key); }
+
+
+            Console.WriteLine("PRES ANY KEY TO CONTINUE");
+            Console.ReadKey();
+            Console.Clear();
+
+
+
+
+            Console.WriteLine("QUESTION 4");
+            Console.WriteLine("What is the most played sport in the United States?");
+            Console.WriteLine("1. Soccer");
+            Console.WriteLine("2. Basketball");
+            Console.WriteLine("3. American Football");
+            Console.WriteLine("4. Baseball");
+
+            Console.Write("YOUR ANSWER: ");
+            key = Convert.ToInt32(Console.ReadLine());
+            correct = 3;
+
+
+
+
+            if (key == correct)
+            {
+                points++;
+                Console.WriteLine("{0} IS CORRECT", key);
+            }
+            else { Console.WriteLine("{0} IS INCORRECT", key); }
+
+
+            Console.WriteLine("PRES ANY KEY TO CONTINUE");
+            Console.ReadKey();
+            Console.Clear();
+
+
+
+            Console.WriteLine("QUESTION 5");
+            Console.WriteLine("Who is the all-time leading scorer in NBA history?");
+            Console.WriteLine("1. Michael Jordan");
+            Console.WriteLine("2. Kobe Bryant");
+            Console.WriteLine("3. LeBron James");
+            Console.WriteLine("4. Kareem Abdul-Jabbar");
+
+
+            Console.Write("YOUR AWNSER: ");
+            key = Convert.ToInt32(Console.ReadLine());
+            correct = 4;
+
+
+            if (key == correct)
+            {
+                points++;
+                Console.WriteLine("{0} IS CORRECT", key);
+            }
+            else { Console.WriteLine("{0} IS INCORRECT", key); }
+
+
+            Console.WriteLine("PRES ANY KEY TO CONTINUE");
+            Console.ReadKey();
+            Console.Clear();
+
+
+
+            Console.WriteLine($"YOU HAVE {points} POINTS");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+        }
+        finally
+        {
+            MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        }
+    }
+
     //arnau
 
 
