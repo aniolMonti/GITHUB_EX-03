@@ -68,6 +68,8 @@
 
     //arnau
 
+    //************GEOGRAPHY****************//
+
     public static void DoGeography()
     {
         int points = 0, correct,key;
@@ -198,6 +200,163 @@
             Console.Write("YOUR AWNSER: ");
             key = Convert.ToInt32(Console.ReadLine());
             correct = 3;
+
+
+            if (key == correct)
+            {
+                points++;
+                Console.WriteLine("{0} IS CORRECT", key);
+            }
+            else { Console.WriteLine("{0} IS INCORRECT", key); }
+
+
+            Console.WriteLine("PRES ANY KEY TO CONTINUE");
+            Console.ReadKey();
+            Console.Clear();
+
+
+
+            Console.WriteLine($"YOU HAVE {points} POINTS");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+        }
+        finally
+        {
+            MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        }
+    }
+
+
+
+    //************ART****************//
+    public static void DoArt()
+    {
+        int points = 0, correct, key;
+        try
+        {
+
+
+            Console.WriteLine("QUESTION 1");
+            Console.WriteLine("Who painted the 'Mona Lisa'?");
+            Console.WriteLine("1. Pablo Picasso");
+            Console.WriteLine("2. Vincent van Gogh");
+            Console.WriteLine("3. Leonardo da Vinci");
+            Console.WriteLine("4. Michelangelo");
+
+            Console.Write("YOUR ANSWER: ");
+            key = Convert.ToInt32(Console.ReadLine());
+            correct = 3;
+
+            if (key == correct)
+            {
+                points++;
+                Console.WriteLine("{0} IS CORRECT", key);
+            }
+            else { Console.WriteLine("{0} IS INCORRECT", key); }
+
+            Console.WriteLine("PRESS ANY KEY TO CONTINUE");
+            Console.ReadKey();
+            Console.Clear();
+
+
+
+
+
+            Console.WriteLine("QUESTION 2");
+            Console.WriteLine("Who painted the famous artwork 'The Starry Night'?");
+            Console.WriteLine("1. Pablo Picasso");
+            Console.WriteLine("2. Vincent van Gogh");
+            Console.WriteLine("3. Claude Monet");
+            Console.WriteLine("4. Frida Kahlo");
+
+            Console.Write("YOUR ANSWER: ");
+            key = Convert.ToInt32(Console.ReadLine());
+            correct = 2;
+
+
+            if (key == correct)
+            {
+                points++;
+                Console.WriteLine("{0} IS CORRECT", key);
+            }
+            else { Console.WriteLine("{0} IS INCORRECT", key); }
+
+
+            Console.WriteLine("PRES ANY KEY TO CONTINUE");
+            Console.ReadKey();
+            Console.Clear();
+
+
+
+
+            Console.WriteLine("QUESTION 3");
+            Console.WriteLine("Which Egyptian queen was depicted as having a cat's head?");
+            Console.WriteLine("1. Cleopatra");
+            Console.WriteLine("2. Nefertiti");
+            Console.WriteLine("3. Bastet");
+            Console.WriteLine("4. Hatshepsut");
+
+            Console.Write("YOUR ANSWER: ");
+            key = Convert.ToInt32(Console.ReadLine());
+            correct = 3;
+
+
+            if (key == correct)
+            {
+                points++;
+                Console.WriteLine("{0} IS CORRECT", key);
+            }
+            else { Console.WriteLine("{0} IS INCORRECT", key); }
+
+
+            Console.WriteLine("PRES ANY KEY TO CONTINUE");
+            Console.ReadKey();
+            Console.Clear();
+
+
+
+
+            Console.WriteLine("QUESTION 4");
+            Console.WriteLine("What is the most famous sculpture in the world?");
+            Console.WriteLine("1. The Thinker");
+            Console.WriteLine("2. The David");
+            Console.WriteLine("3. The Pieta");
+            Console.WriteLine("4. The Venus de Milo");
+
+            Console.Write("YOUR ANSWER: ");
+            key = Convert.ToInt32(Console.ReadLine());
+            correct = 2;
+
+
+
+
+            if (key == correct)
+            {
+                points++;
+                Console.WriteLine("{0} IS CORRECT", key);
+            }
+            else { Console.WriteLine("{0} IS INCORRECT", key); }
+
+
+            Console.WriteLine("PRES ANY KEY TO CONTINUE");
+            Console.ReadKey();
+            Console.Clear();
+
+
+
+            Console.WriteLine("QUESTION 5");
+            Console.WriteLine("Which museum is home to the painting 'The Persistence of Memory'?");
+            Console.WriteLine("1. The Louvre");
+            Console.WriteLine("2. The Museum of Modern Art");
+            Console.WriteLine("3. The British Museum");
+            Console.WriteLine("4. The National Gallery");
+
+
+            Console.Write("YOUR AWNSER: ");
+            key = Convert.ToInt32(Console.ReadLine());
+            correct = 2;
 
 
             if (key == correct)
