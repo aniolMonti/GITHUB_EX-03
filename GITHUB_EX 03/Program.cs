@@ -25,15 +25,15 @@
                 case ConsoleKey.D3:
                     DoHistory();
                     break;
-                //case ConsoleKey.D4:
-                //    DoGeography();
-                //    break;
-                //case ConsoleKey.D5:
-                //    DoArt();
-                //    break;
-                //case ConsoleKey.D6:
-                //    DoSport();
-                //    break;
+                case ConsoleKey.D4:
+                    DoGeography();
+                    break;
+                case ConsoleKey.D5:
+                    DoArt();
+                    break;
+                case ConsoleKey.D6:
+                    DoSport();
+                    break;
                 case ConsoleKey.D0:
                     MsgNextScreen("PRESS ANY KEY TO EXIT");
                     break;
